@@ -1,0 +1,29 @@
+program ej20;
+
+var
+num,prod,mayor,secuencia:integer;
+begin
+  prod:=1;
+  mayor:=0;
+  secuencia:=0;
+writeln('Ingrese numeros enteros');
+readln(num);
+   while (num<>9999) do
+   begin
+   prod:=prod*num;   //ejercicio a
+   if num>mayor then //ejercicio b
+   mayor:=num;       //ejercicio b
+   secuencia:=secuencia+num; //ejercicio c
+   readln(num);
+   end;
+   begin
+   if(num=9999) then
+  writeln('El producto es: ' ,prod);   //ejercicio a
+  writeln('El numero mas grande de la secuencia es: ' ,mayor); //ejercicio b
+  if secuencia mod 2 = 0 then //ejercicio c
+  writeln('La suma de todos los numeros da ' ,secuencia, ' el cual da como resultado un numero par') //ejercicio c
+  else
+  writeln('La suma de todos los numeros da ' ,secuencia, ' el cual da como resultado un numero impar'); //ejercicio c
+  readln();
+   end;
+end.   
