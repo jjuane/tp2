@@ -10,20 +10,20 @@ writeln('Ingrese numeros enteros');
 readln(num);
    while (num<>9999) do
    begin
-   prod:=prod*num;   //ejercicio a
-   if num>mayor then //ejercicio b
-   mayor:=num;       //ejercicio b
-   secuencia:=secuencia+num; //ejercicio c
+   prod:=prod*num;   
+   if num>mayor then 
+   mayor:=num;       
+   secuencia:=secuencia+num; 
    readln(num);
    end;
    begin
    if(num=9999) then
-  writeln('El producto es: ' ,prod);   //ejercicio a
-  writeln('El numero mas grande de la secuencia es: ' ,mayor); //ejercicio b
-  if secuencia mod 2 = 0 then //ejercicio c
-  writeln('La suma de todos los numeros da ' ,secuencia, ' el cual da como resultado un numero par') //ejercicio c
+  writeln('El producto es: ' ,prod);  
+  writeln('El numero mas grande de la secuencia es: ' ,mayor);
+  if secuencia mod 2 = 0 then
+  writeln('La suma de todos los numeros da ' ,secuencia, ' el cual da como resultado un numero par') 
   else
-  writeln('La suma de todos los numeros da ' ,secuencia, ' el cual da como resultado un numero impar'); //ejercicio c
+  writeln('La suma de todos los numeros da ' ,secuencia, ' el cual da como resultado un numero impar'); 
   readln();
    end;
 end.   
