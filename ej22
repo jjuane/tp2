@@ -1,0 +1,20 @@
+program ej22;
+var
+car:char;
+cant:integer;
+begin
+cant:=0;
+writeln('Ingrese una secuencia de caracteres. Debe terminar con un punto.');
+readln(car);
+while (car<>'.') do
+begin
+cant:=cant+1;
+readln(car);
+end;
+writeln('La cantidad de caracteres leidos es: ' ,cant);
+if cant>100 then
+writeln('La cantidad es mayor a 100')
+else
+  writeln('La cantidad es menor a 100');
+  readln();
+end. 
